@@ -175,10 +175,10 @@ def create_single_label(settings, item, rw, supportdata):
     mylabel = get_padding(mylabel, supportdata["maxlabelsize"])
     labelset = {
         "name": mylabel,
-        "rw": rw,
-        "type": item["type"],
-        "qd": item["iodepth"],
-        "nj": item["numjobs"],
+     #   "rw": rw,
+     #   "type": item["type"],
+     #   "qd": item["iodepth"],
+     #   "nj": item["numjobs"],
         "mean": item[rw]["mean"],
         "std%": item[rw]["stdv"],
         f"P{settings['percentile']}": item[rw]["percentile"],
@@ -190,10 +190,10 @@ def create_single_label(settings, item, rw, supportdata):
 def generate_labelset(settings, supportdata):
     master_padding = {
         "name": 0,
-        "rw": 5,
-        "type": 4,
-        "qd": 2,
-        "nj": 2,
+     #   "rw": 5,
+     #   "type": 4,
+     #   "qd": 2,
+     #   "nj": 2,
         "mean": 0,
         "std%": 0,
         f"P{settings['percentile']}": 0,

@@ -466,12 +466,12 @@ def save_png(settings, plt, fig):
     plt.tight_layout(rect=[0, 0, 1, 1])
     random = random_char(2)
     if settings["output_filename"] is None or len(settings["output_filename"]) == 0:
-        savename = f"{title}_{now}_{random}.png"
+        savename = f"{title}_{now}_{random}.eps"
     else:
         savename = settings["output_filename"]
     print(f"\n Saving to file {savename}\n")
-    fig.savefig(savename, dpi=settings["dpi"])
-    write_png_metadata(savename, settings)
+    fig.savefig(savename, format='eps',dpi=1200)
+    #write_png_metadata(savename, settings)
 
 
 def write_png_metadata(filename, settings):

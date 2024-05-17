@@ -98,7 +98,7 @@ def chart_2d_log_data(settings, dataset):
         "maxlabelsize": support2d.get_max_label_size(settings, data),
     }
 
-    supportdata["fontP"].set_size("xx-small")
+    supportdata["fontP"].set_size("medium")
 
     #
     # Converting the data and drawing the lines
